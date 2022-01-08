@@ -1,0 +1,52 @@
+* {
+  font-family: 'Mochiy Pop P One', sans-serif; }
+
+.animacion {
+  transition: all 0.9s; }
+
+.animacion:hover {
+  transform: scale(1.2, 1.2); }
+
+.gridContenedor {
+  display: grid; }
+  @media only screen and (max-width: 768px) {
+    .gridContenedor {
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-columns: 100%;
+      grid-template-areas: "titulo" "img" "texto" "titulo2" "iframe"; }
+      .gridContenedor .imgQS {
+        width: 100%; } }
+  @media only screen and (min-width: 1023px) {
+    .gridContenedor {
+      grid-template-rows: auto auto auto auto;
+      grid-template-columns: 30% 70%;
+      grid-template-areas: "titulo titulo" "img texto" "titulo2 titulo2" "iframe iframe"; }
+      .gridContenedor .imgQS {
+        width: 100%; }
+      .gridContenedor .gridTexto {
+        font-size: 27px; } }
+  .gridContenedor .gridTitulo {
+    grid-area: titulo; }
+  .gridContenedor .gridImg {
+    grid-area: img; }
+  .gridContenedor .gridTexto {
+    grid-area: texto; }
+  .gridContenedor .gridTitulo2 {
+    grid-area: titulo2; }
+  .gridContenedor .gridIframe {
+    grid-area: iframe; }
+  .gridContenedor .justifyCenter {
+    justify-content: center; }
+
+.bodys {
+  background-image: url(../assets/img/tormenta.jpg); }
+
+.pad20 {
+  padding: 20px; }
+
+.flex {
+  display: flex; }
+
+@media (max-width: 768px) {
+  .imgInicio {
+    width: 100%; } }

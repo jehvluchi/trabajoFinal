@@ -1,0 +1,18 @@
+@import "letras";
+@import "animacion";
+@import "grid";
+
+.bodys{
+	background-image: url(../assets/img/tormenta.jpg);
+}
+.pad20{
+	padding: 20px;
+}
+.flex{
+	display: flex;
+}
+@media (max-width: 768px){
+	.imgInicio{
+		width: 100%;
+	}
+}

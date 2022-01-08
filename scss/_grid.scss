@@ -1,0 +1,49 @@
+.gridContenedor{
+	display: grid;
+	@media only screen and (max-width: 768px){
+		grid-template-rows: auto auto auto auto auto;
+		grid-template-columns: 100%;
+		grid-template-areas:
+		"titulo"
+		"img"
+		"texto"
+		"titulo2"
+		"iframe";
+		.imgQS{
+			width: 100%;
+		}
+	}
+	@media only screen and (min-width: 1023px){
+		grid-template-rows: auto auto auto auto;
+		grid-template-columns: 30% 70%;
+		grid-template-areas: 
+		"titulo titulo"
+		"img texto"
+		"titulo2 titulo2"
+		"iframe iframe";
+		.imgQS{
+			width: 100%;
+		}
+		.gridTexto{
+			font-size: 27px;
+		}
+	}
+	.gridTitulo{
+		grid-area: titulo;
+	}
+	.gridImg{
+		grid-area: img;
+	}
+	.gridTexto{
+		grid-area: texto;
+	}
+	.gridTitulo2{
+		grid-area: titulo2;
+	}
+	.gridIframe{
+		grid-area: iframe;
+	}
+	.justifyCenter{
+		justify-content: center;
+	}
+}
